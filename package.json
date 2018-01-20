@@ -1,0 +1,22 @@
+{
+  "name": "mfresh_node",
+  "version": "1.0.0",
+  "description": "mfresh node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haohome/mfresh_node.git"
+  },
+  "author": "Daniel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haohome/mfresh_node/issues"
+  },
+  "homepage": "https://github.com/haohome/mfresh_node#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
