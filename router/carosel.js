@@ -3,7 +3,7 @@ const express = require('express');
 let router = express.Router();
 
 router.get('/product',function(req,res){
-  pool.query("SELECT * FROM mf_product WHERE pid<=5 ",function(err,result){
+  pool.query("SELECT * FROM mf_product WHERE pid<=4 ",function(err,result){
     res.json(result)
   })
 })
