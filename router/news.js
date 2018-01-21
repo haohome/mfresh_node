@@ -15,7 +15,7 @@ router.get("/list/:pno",function(req,res){
     if(err)throw err;
     outPut.totalSize=result[0]['c'];
     outPut.pageCount=Math.ceil(outPut.totalSize/outPut.pageSize);
-    let start=(pno-1)*outPut.pageCount;
+    let start=(pno-1)*outPut.pageSize;
     let count=outPut.pageSize;
     pool.query("SELECT * FROM mf_news ORDER BY pubTime DESC LIMIT ?,?",[start,count],function(err,data){
       if(err)throw err;
