@@ -10,7 +10,7 @@ server.listen(3000);
 app.use( bodyParser.urlencoded({extended:false}) );
 
 app.use( cors({
-  origin: ["http://127.0.0.1:8080"],
+  origin: ["http://127.0.0.1:8080","http://localhost:8080"],
   credentials: true
 }) );
 app.use('/carosel', routerCarosel);
