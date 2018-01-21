@@ -8,7 +8,7 @@ router.get("/list/:pno",function(req,res){
     totalSize:0,    //新闻总条数
     pageSize:5,     //页面显示条数
     pageCount:0,    //总页数
-    pno:pno,            //当前页码
+    pno:pno,        //当前页码
     data:[],        //当前页新闻数据
   }
   pool.query("SELECT COUNT(*) AS c FROM mf_news",function(err,result){
